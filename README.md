@@ -1,4 +1,5 @@
 sensor_monitor
 ==============
-
-scripts to display sensor readings of on-board cpu and motherboard sensors
+ 
+Displays CPU and Motherboard Sensor Readings
+In A Categorised Format With Custom Refesh Rate
