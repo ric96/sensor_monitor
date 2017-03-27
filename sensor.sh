@@ -1,4 +1,3 @@
-
 #!/bin/bash
 clear
 flag=0
@@ -11,10 +10,14 @@ while true
 do
  cpuclk=$(cat /proc/cpuinfo | grep "cpu MHz")
  cputmp=$(sensors | grep -i -e "Physical" -e "Core")
+ cpuuse=$()
  fanspd=$(sensors | grep "fan")
  hddtmp=$(sensors | grep "temp")
  inpvlt=$(sensors | grep "in[0-9]")
  clear
+ echo "CPU USAGE"
+ mpstat -P ALL
+ echo " "
  echo "CPU CLOCK ( MHZ )"
  echo "$cpuclk"
  echo " "
